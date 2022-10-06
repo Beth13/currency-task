@@ -1,0 +1,16 @@
+.currency__item {
+  display: flex;
+  margin: 0 auto;
+
+  &-select {
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+  }
+
+  &-input {
+    border-radius: 5px;
+    width: 60%;
+  }
+}

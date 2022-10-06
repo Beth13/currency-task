@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: space-between;
+
+  &__title {
+    line-height: 48px;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+
+  &__currency {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px auto 0;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+
+    &-item:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
