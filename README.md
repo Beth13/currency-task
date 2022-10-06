@@ -2,7 +2,7 @@
 
 ## [Site Link](https://bright-conkies-ae0923.netlify.app/)
 
-### This app supports desktop (up-to-1400) version
+### This app supports desktop (up-to-1400) and tablet (up-to-768) versions
 
 ## The tech stack is:
 
