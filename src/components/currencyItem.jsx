@@ -2,15 +2,30 @@ import React from 'react';
 
 import '../styles/currencyItem.scss';
 
-const CurrencyItem = () => {
+const CurrencyItem = ({
+  todaysCurrencyNames,
+  selectedCurrency,
+  amount,
+  handleCurrency,
+  handleChangeAmount,
+  title,
+}) => {
   return (
     <div className="currency__item">
-      <select className="currency__item-select" name="" id="">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="UAH">UAH</option>
+      <span className="currency__item-title">{title}</span>
+      <select className="currency__item-select" value={selectedCurrency} onChange={handleCurrency}>
+        {todaysCurrencyNames.map(option => (
+          <option key={option} value={option}>
+            {option}
+          </option>
+        ))}
       </select>
-      <input type="number" className="currency__item-input" />
+      <input
+        type="number"
+        className="currency__item-input"
+        value={Number(amount).toFixed(2)}
+        onChange={handleChangeAmount}
+      />
     </div>
   );
 };

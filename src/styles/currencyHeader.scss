@@ -8,10 +8,20 @@
   background-color: white;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   &__title {
     line-height: 48px;
     margin-left: 25px;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      margin: auto;
+      border-bottom: 1px solid black;
+      margin-bottom: 10px;
+    }
   }
 
   &__currency {
@@ -21,6 +31,11 @@
     font-weight: 700;
     font-size: 24px;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      margin: auto;
+      font-size: 18px;
+    }
 
     &-item:first-child {
       margin-bottom: 10px;
