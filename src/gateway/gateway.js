@@ -1,7 +1,7 @@
-const baseUrl = 'https://v6.exchangerate-api.com/v6/27e3e70aba6e5139be27ee07/latest/';
+const baseUrl = 'https://v6.exchangerate-api.com/v6/390073a2821a114420b1cf25/latest/';
 
-export const getTodaysCurrency = currency => {
-  return fetch(`${baseUrl}/${currency}`)
+export const getTodaysCurrency = currency =>
+  fetch(`${baseUrl}/${currency}`)
     .then(response => {
       if (response.ok) {
         return response.json();
@@ -14,4 +14,3 @@ export const getTodaysCurrency = currency => {
       return res;
     })
     .catch(() => alert("Internal Server Error. Can't display today's currency"));
-};
