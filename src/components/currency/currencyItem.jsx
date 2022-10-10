@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/currencyItem.scss';
+import '../../styles/currencyItem.scss';
 
 const CurrencyItem = ({
   todaysCurrencyNames,

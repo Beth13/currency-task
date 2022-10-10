@@ -1,7 +1,7 @@
 import moment from 'moment/moment';
 import React from 'react';
 
-import '../styles/currencyHeader.scss';
+import '../../styles/currencyHeader.scss';
 
 const CurrencyHeader = ({ todaysCurrency }) => {
   return (

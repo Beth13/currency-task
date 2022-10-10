@@ -1,4 +1,4 @@
-import { getTodaysCurrency } from '../gateway/gateway';
+import { getTodaysCurrency } from '../../gateway/gateway';
 
 export const CURR_RECEIVED = 'CURR_RECEIVED';
 

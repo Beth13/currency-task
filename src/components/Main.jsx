@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import CurrencyHeader from './currencyHeader';
-import CurrencyItem from './currencyItem';
-
-import * as actions from './currencyItem.actions';
-import { currSelector } from './currencyItem.selector';
 import { connect } from 'react-redux';
+
+import CurrencyHeader from './currency/currencyHeader';
+import CurrencyItem from './currency/currencyItem';
+
+import * as actions from './currency/currencyItem.actions';
+import { currSelector } from './currency/currencyItem.selector';
 
 const Main = ({ getCurrList, todaysCurrency }) => {
   const [fromCurrency, setFromCurrency] = useState('UAH');
